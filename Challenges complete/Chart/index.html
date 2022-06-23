@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
+  <body>
+    <canvas id="myChart" style="width: 100%; max-width: 1000px"></canvas>
+
+    <script>
+      var xValues = ['Sleep', 'Study', 'Eat', 'Relax', 'Party'];
+      var yValues = [55, 49, 44, 24, 5];
+      var barColors = ['#c5d1eb', '#92afd7', '#5a7684', '#395b50', '#1f2f16'];
+
+      new Chart('myChart', {
+        type: 'doughnut',
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+              borderWidth: 3,
+            },
+          ],
+        },
+        options: {
+          layout: {
+            padding: {
+              top: 20,
+            },
+          },
+          title: {
+            display: true,
+            text: 'A "perfect" day in my life',
+          },
+        },
+      });
+    </script>
+
+    <canvas id="myOtherChart" style="width: 100%; max-width: 1000px"></canvas>
+
+    <script>
+      var xValues = ['Sleep', 'Study', 'Eat', 'Relax', 'Party'];
+      var yValues = [50, 15, 5, 30, 0];
+      var barColors = ['#c5d1eb', '#92afd7', '#5a7684', '#395b50', '#1f2f16'];
+
+      new Chart('myOtherChart', {
+        type: 'doughnut',
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              backgroundColor: barColors,
+              data: yValues,
+            },
+          ],
+        },
+        options: {
+          layout: {
+            padding: {
+              top: 50,
+            },
+          },
+          title: {
+            display: true,
+            text: 'A day in my life',
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

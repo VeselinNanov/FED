@@ -1,0 +1,37 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin-top: 200px;
+}
+
+.panel {
+  position: relative;
+  height: 4vh;
+  border-radius: 25px;
+  margin-top: 20px;
+  width: 50vw;
+  cursor: pointer;
+  color: #fff;
+  transition: height 0.5s ease-in-out;
+}
+.panel h3 {
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  margin: 0;
+}
+
+.panel.active {
+  height: 15vh;
+}
