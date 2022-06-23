@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: linear-gradient(
+    90deg,
+    rgb(51, 51, 51) 0%,
+    rgb(5, 34, 71) 100%
+  );
+  overflow-x: hidden;
+  font-family: 'Roboto';
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+/* NAVIGATION */
+header {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  align-items: center;
+  color: #fff;
+
+  background-image: linear-gradient(
+    90deg,
+    rgba(87, 87, 87, 0.21) 0%,
+    rgba(19, 19, 19, 0.32)
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+}
+i {
+  padding: 10px;
+  font-size: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #333;
+}
+
+.menu {
+  font-size: 16px;
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+/* CHALLENGE */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+p {
+  max-width: 60ex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+h3 {
+  color: #fff;
+  margin: 10px 0 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+}
+
+textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100px;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0 0 20px;
+}
+
+.tag {
+  background-color: #f0932b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 0 5px 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.tag.highlight {
+  background-color: #273c75;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(137, 27, 180, 0.21) 0%,
+    rgb(64, 7, 117, 0.32)
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+}
